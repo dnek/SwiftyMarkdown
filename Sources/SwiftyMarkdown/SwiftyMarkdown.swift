@@ -622,7 +622,7 @@ extension SwiftyMarkdown {
 				let str = NSAttributedString(attachment: image1Attachment)
 				finalAttributedString.append(str)
 				#elseif !os(watchOS)
-				let image1Attachment = ImageAttachment(imageScale: imageScale, containImage: containImageWidth)
+				let image1Attachment = ImageAttachment(imageScale: imageScale, containImageWidth: containImageWidth)
 				image1Attachment.image = NSImage(named: token.metadataStrings[imgIdx])
 				let str = NSAttributedString(attachment: image1Attachment)
 				finalAttributedString.append(str)
